@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "momentoshardcore",
+  "version": "${version}",
+  "name": "momentosHARDCORE",
+  "description": "Una ruleta con eventos hardcore: lluvia ácida, capas mortales, PvP, creepers y más.",
+  "authors": ["momentosHARDCORE"],
+  "license": "MIT",
+  "icon": "assets/momentoshardcore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.momentoshardcore.MomentosHardcore"],
+    "client": ["com.momentoshardcore.client.MomentosHardcoreClient"]
+  },
+  "mixins": [
+    { "config": "momentoshardcore.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
